@@ -1,0 +1,157 @@
+body {
+    /* Styles placed here will affect the body of the webpage. */
+    background-color: #ffffff;
+    font-family: 'Merriweather', serif;
+  
+}
+
+
+/* Heading styles */
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+h4 {
+	font-size: 1.4rem;
+}
+
+/* These styles will affect all levels of headings */
+h1, h2, h3, h4 {
+    color: #014F86;
+    font-family: 'Garamond', serif;
+
+}
+
+
+/* These styles will affect all levels of headings within the class "dark" */
+.dark h1, .dark h2, .dark h3, .dark h4 {
+    color: #ffffff;
+}
+
+/* These styles will affect the links within the 'links' element (top navigation bar)*/
+#links li a {
+	text-decoration: none;
+	color: #F4A259;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+/* These styles will affect the hover state links within the 'links' element (top navigation bar)*/
+#links li a:hover {
+	color: #D94F30;
+}
+
+/* These styles will affect the navigation bar*/
+.navigation {
+    background-color: transparent;
+}
+
+/* These styles will affect the elements with the class "dark" applied*/
+.dark {
+    color: #fff;
+    background-color: #606060;
+}
+
+/* These styles will affect the "hamburger" button for mobile display*/
+.hamburger {
+    color: #F4A259;    
+}
+
+/* These styles will affect the header section */
+header {    
+    background-color: transparent;
+}
+
+/* These styles will affect the Call To Action buttons */
+.cta-btn {
+    background-color: #F4A259;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    width: 175px;
+    text-align: center;
+    height: 2rem;
+    text-decoration: none;
+    padding: .5rem 0 0 0;
+    margin: 0 0 2rem 0;
+    border-radius: 100px;
+    transition: .2s ease all;
+}
+.cta-btn:hover {
+    background-color: #F88379;
+    color:#3E3E3E;
+}
+
+/* These styles will affect the accordion elements */
+.accordion-container {
+    margin-bottom: 1.2rem;
+}
+.accordion-button {
+    font-size: 1rem;
+    background-color: #F4A259;
+    width: 100%;
+    cursor: pointer;
+    color: #014F86;
+    border-radius: 100em;
+    font-weight: bold;
+    padding: 1rem;
+    transition: .2s ease all;
+    border: none;
+    text-align: left;
+}
+.accordion-button:hover, .accordion-button:active {
+    background-color: #F88379;
+    color: #fff;
+}
+.accordion-content {
+    padding: 0 2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+footer {
+    background-color: #F4A259;
+}
+
+/* These styles will affect screens smaller than 1350px */
+@media only screen and (max-width: 1350px) {
+
+    h1 {
+        font-size: 4rem;
+    }   
+
+}
+
+
+/* These styles will affect screens smaller than 992px (tablet and mobile) */
+@media only screen and (max-width: 992px) {
+
+    h1 {
+        font-size: 4rem;
+        margin-top: 2rem;
+        font-size: 4rem;
+    }
+    
+    #links {
+        background-color: #F9E4C8;
+    }
+
+    
+}
+
+/* smooth scroll animation */
+html {
+    scroll-behavior: smooth;
+  }
+  

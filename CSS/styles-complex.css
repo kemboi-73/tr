@@ -1,0 +1,403 @@
+html {
+    font-size: 16px; /* This is the 'root' font size of the document. When you see 'rem' next to different stylings, it is refering to this value 'relative'. For example, 2rem of 16px is 2*16 or 32px */
+}
+
+body {
+    padding: 0; /* removes padding around the body of the webpage */
+    margin: 0; /* removes margin around the body of the webpage */
+}
+
+h1 {
+    margin-bottom: 2rem; /* Adds a 2rem (32px) margin to the bottom of all h1 elements */
+}
+
+h2 {
+    margin-top: 0; /* Removes top margins from all h2 elements */
+}
+
+.mb-2 {
+    margin-bottom: 2rem; /* Anywhere we add this class will add a bottom margin of 2rem to the element */
+}
+
+.navigation {
+    height: 5rem;           /* Sets navigation to 5rem (80px) high */
+    padding-top: 0;         /* Sets top padding navigation class */
+    padding-right: 40px;    /* Sets right padding navigation class */
+    padding-bottom: 0;      /* Sets bottom padding navigation class */
+    padding-left: 40px;     /* Sets left padding navigation class */
+    position: relative;
+}
+
+content, footer {
+    padding-top: 0;         /* Sets top padding content and footer elements */  
+    padding-right: 140px;   /* Sets top padding content and footer elements */
+    padding-bottom: 0;      /* Sets top padding content and footer elements */
+    padding-left: 140px;    /* Sets top padding content and footer elements */
+}
+
+#site-logo p {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#links {
+    display: flex; /* lays out the content of the links elements within a flex box */
+    gap: 30px; /* Inserts a 30px gap between each item within links element */
+}
+
+#links li {
+	list-style: none; /* Removes dot point from links items */
+}
+
+.tooltipInstructions li {
+    list-style: unset!important;
+}
+
+.navigation {
+    display: flex;  /* lays out the content of the navigation element within a flex box */
+    align-items: center;    /* Aligns item within the navigation element to the vertical center of the element */
+    justify-content: space-between; /* Distribute items evenly The first item is flush with the start, the last is flush with the end */
+}
+
+input#checkbox_toggle[type=checkbox] {
+    display: none;    
+}
+
+.hamburger {
+    display: none;    
+    font-size: 2rem;    
+    user-select: none;    
+}
+
+header {
+    padding: 0; /* Removes padding from header element */
+    margin-top: -5rem;
+    height: calc(100vh);
+}
+
+header > .col:nth-child(2) {
+    padding-right: 40px; /* Adds right padding to the second column within the header element */
+    display: flex; /* lays out the content of the header second column element within a flex box */
+    align-items: center; /* Aligns item within the navigation element to the vertical center of the element */
+}
+
+header > .col p {
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+}
+
+header, #contact {
+    display: grid;  /* Allows the header and contact elements to be laid out as a grid */
+    grid-template-columns: calc(50% - 15px) calc(50% - 15px);   /* Sets each column within the grid to be 50% of the screen's width minus 15px */
+    column-gap: 30px;   /* Adds a gap of 30px between each column */
+}
+
+.banner {
+    height: calc(100vh);    /* Sets the height of the banner image to 100% of the screen's height */
+    object-fit: cover;  /* Any image inserted into the banner class will remain full size and be cropped by the banner container */
+}
+
+#about {
+    max-width: 600px;   /* Sets the maximum width of the about element to 600px */
+}
+
+#gallery-container {
+	display: grid;  /* Allows the gallery-container element to be laid out as a grid */
+	grid-template-columns: 33.333% 33.333% 33.333%; /* Sets each column within the grid to be 33.33% of the screen's width minus 15px */
+	column-gap: 0; /* Removes any gap between each column */
+    row-gap: 2rem; /* Adds a 2rem (32px) gap to each row of the gallery-container */
+	max-width: 750px; /* Gallery-container will not exceed 750px */
+	margin: auto; /* Centers the gallery-container */
+}
+
+.img-container {
+    max-width: 250px; /* Image container within gallery will not exceed 250px */
+}
+
+.img-container img {
+    width: 250px; /* Sets the width of the images in the gallery to 250px */
+    height: 250px;  /* Sets the width of the images in the gallery to 250px */
+    object-fit: cover; /* Any image inserted into the banner class will remain full size and be cropped by the banner container */
+    transition: .2s ease all; /* Sets any animation connected to the image (scale) */
+}
+
+.img-container img:hover {
+    transform: scale(1.1); /* On hover the image within the gallery will scale by 10% */
+}
+
+.img-caption {
+	max-width: 200px; /* The caption box in the gallery will not exceed 200px */
+	margin-top: 1rem; /* Sets a top margin of 1 rem (16px) to the image caption */
+    margin-right: auto; /* center aligns the image caption */
+    margin-bottom: 1rem; /* Sets a bottom margin of 1 rem (16px) to the image caption */
+    margin-left: auto; /* center aligns the image caption */
+}
+/* Gallery Font Adjustments */
+#gallery-container p {
+    font-size: 0.8em;
+    font-style: italic;
+}
+/* font adjustments*/
+figcaption {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+section {
+    padding-top: 80px;  /* Adds a top padding of 80px to the section element */
+    padding-right: 300px; /* Adds a right padding of 300px to the section element */
+    padding-bottom: 80px; /* Adds a bottom padding of 80px to the section element */
+    padding-left: 300px; /* Adds a left padding of 300px to the section element */
+}
+
+iframe.video {
+    margin:auto;
+    display: flex;
+}
+
+.video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    max-width: 800px;
+  }
+
+.text-center {
+    text-align: center;
+}
+
+.profile-image {
+	width: 300px;
+	height: 300px;
+	border-radius: 100rem;
+	object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.padlet-embed {
+    margin-bottom: 2rem;
+}
+
+footer {
+    display: grid; /* Allows the footer element to be laid out as a grid */
+    grid-template-columns: calc(33.33% - 15px) calc(33.33% - 15px) calc(33.33% - 15px); /* Sets each column within the grid to be 33.33% of the screen's width minus 15px */
+    column-gap: 30px;   /* Adds a gap of 30px between each column */
+    padding-top: 2rem;  /* Sets the top padding of the footer to 2rem */
+    padding-bottom: 2rem;   /* Sets the bottom padding of the footer to 2rem */
+}
+
+footer.col {
+    padding-bottom: 2rem;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+footer ul li a {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+#delete-me, #delete-me-02 {
+    background-color: #ffcaca;
+    padding: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+}
+
+/* These styles will affect screens smaller than 1350px */
+@media only screen and (max-width: 1350px) {
+
+    .navigation {
+        padding: 0 40px;
+    }
+
+    header > .col:nth-child(2) {
+        padding-right: 40px;
+    }
+
+    section, footer {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+/* These styles will affect screens smaller than 992px (tablet and mobile) */
+@media only screen and (max-width: 992px) {
+
+
+    .navigation {
+        padding: 0 40px;
+    }
+    .content {        
+        padding: 0;
+    }
+
+    header {
+        height: unset;
+    }
+
+    #links {
+        display:none;        
+        position: absolute;               
+        right: 0;        
+        left: 0;        
+        text-align: center;        
+        padding: 0;
+        top: 0;
+        z-index: 2;
+        margin: 0;        
+        }
+
+    .hamburger {
+        position: relative;
+        display: block;
+        z-index: 3;    
+    }
+        
+    input[type=checkbox]:checked ~ #links{
+
+        display: block;
+                
+    }
+
+    nav ul li {
+        display: block;
+        padding: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 4rem;
+    }
+
+    #about {
+        max-width: unset;
+    }
+
+    #gallery-container, header, footer, #contact {
+        grid-template-columns: 100%;
+    }
+
+    .img-container {
+        max-width: unset;
+    }
+
+
+    header > .col:nth-child(2) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .banner {
+        height: 200px;
+    }
+
+    .cta-btn {
+        width: 100%;
+    }
+    
+}
+
+/* These styles affect the 'tooltip' popups*/
+.tooltip {	
+	background-color: #0052a0;
+	width: 100%;
+	max-width: 410px;
+	padding: 1rem;
+	z-index: 99;
+	border-radius: 10px;
+	top: 1rem;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-align: left;
+}
+
+.tooltip::before {
+	content: '▲';
+	width: 100px;
+	height: 100px;
+	color: #0052a0;
+	left: 9px;
+	top: -24px;
+	display: inline-block;
+	position: absolute;
+	z-index: -2;
+	font-size: 2rem;
+}
+
+.tooltipTitle {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.tooltipInstructions {
+    padding: 1rem 2rem;
+    background-color: #ffffffbd;
+    border-radius: 5px;
+    margin-bottom: 0;
+    color: #000;
+}
+
+.tooltipInstructions li {
+    margin-bottom: .5rem;
+}
+
+.code {
+    line-height: 0;
+    font-family: monospace;
+    font-size: 1rem;
+    background-color: #ffffff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
+.top-6 {
+    top: 6rem;
+}
+
+.top-15 {
+    top: 15rem;
+}
+
+.top-20 {
+    top: 20rem;
+}
+
+.top-30 {
+    top: 30rem;
+}
+
+.top-40 {
+    top:40rem;
+}
+
+.top-50 {
+    top:50rem;
+}
+
+#tooltip-toggle {
+	margin-top: 1rem;
+}
+
+.tooltip-toggle-label {
+	font-size: .8rem;
+}
